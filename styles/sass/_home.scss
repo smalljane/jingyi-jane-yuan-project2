@@ -1,0 +1,96 @@
+/* Introduction Section */
+.introSection{
+    background-color:#EDEDED;
+    padding: 15rem 0;
+}
+.introContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    padding-top:12rem;
+}
+h4{
+    font-size: 1.6rem;
+    font-weight:700;
+    letter-spacing:8px;
+    text-align:center;
+    text-transform: uppercase;
+    color:#999999;
+}
+
+.introContent h2{
+    font-size:4.8rem;
+    letter-spacing:-1.2px;
+}
+
+.introWords{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+.introContent aside{
+    position:relative;
+}
+
+.introWords,
+.introContent aside{
+    flex:1 1 400px;
+}
+
+/* adding a decorative short line on top of the title */
+.introContent h2:before{
+    content:" ";
+    display:block;
+    width:4.5rem;;
+    border-top:3px solid black;
+}
+
+/* adding a frame for the about section's image */
+.homeImgOne{
+    border:1.5rem solid #ffffff;
+}
+
+/* place the circle logo in the right position */
+.circleLogo{
+    position:absolute;
+    bottom:-5rem;
+    left:-10rem;
+    z-index:1;
+}
+
+/* offer of the hotel section styling */
+.offerSection{
+    display: flex;
+}
+
+/* testimonial section styling */
+
+.clientSection{
+    background-image: url(../sunshine-assets/pattern.png);
+}
+
+.clientSection h2{
+    font-size:5.8rem;
+    letter-spacing:-1.4px;
+    text-transform: capitalize;
+}
+
+.clientSectionOne{
+    background-color: #ffffff;
+    height:50rem;
+    padding: 0 10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.starRating{
+    display:flex;
+}
+.starRating i{
+    color:#F6AB09;
+    font-size:3rem;
+}
+

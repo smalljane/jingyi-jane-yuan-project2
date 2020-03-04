@@ -6,7 +6,7 @@
     <title>Project2 Sunshine Home Page</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700|Poppins:400,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a73a4f51c3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
@@ -28,44 +28,55 @@
                 </div>
     </header>
     <main>
-        <section class="introSection wrapper">
-            <h4>a little about us</h4>
-            <aside>
-                <img src="./sunshine-assets/home-2.jpeg" alt=" Head Shot of a girl on smiling at the camera, on the beach">
-                <img src="./sunshine-assets/home-circle-text.png" alt=" A circle of text: monasai hotel and resort">
-            </aside>
-            <div>
-                <h2>A great place to enjoy your life</h2>
-                <p>Design cute expedition,Fun WordPress traveler modern organized, travelblogger Travel theme darn darn webdesign WordPress. Website blogger
-                design WordPress expedition colorful, organized cute modern WordPress pretty design. Whimsical travelblogger adventure
-                fun traveling excursion, pretty theme organized darn traveling.</p>
-                <p><span>Ethan hunt</span> - director at monalisa</p>
+        <section class="introSection"> 
+            <div class="wrapper">
+                <h4>a little about us</h4>
+                <div class="introContent">
+                    <aside>
+                        <img class="homeImgOne" src="./sunshine-assets/home-2.jpeg" alt=" Head Shot of a girl on smiling at the camera, on the beach">
+                        <img class="circleLogo" src="./sunshine-assets/home-circle-text.png" alt="hotel name in a circle">
+                    </aside>
+                    <div class="introWords">
+                        <h2>A great place to enjoy your life</h2>
+
+                        <p>Design cute expedition,Fun WordPress traveler modern organized, travelblogger Travel theme darn darn webdesign WordPress. Website blogger design WordPress expedition colorful, organized cute modern WordPress pretty design. Whimsical travelblogger adventure fun traveling excursion, pretty theme organized darn traveling.</p>
+
+                        <p><span>Ethan Hunt</span> - director at monalisa</p>
+                    </div>
+                </div>
+
             </div>
         </section>
         
         <section class="offerSection">
-            <ul>
+            <ul class="wrapper">
                 <li>
+                    <i class="fas fa-sun"></i>
                     <h3>sunny season</h3>
                     <p>Travelblogger excursion wanderlust design modern organized fun, whimsical Travel website adventure. Organized cute expedition.</p>
                 </li>
                 <li>
+                    <i class="fas fa-plane"></i>
                     <h3>filight included</h3>
                     <p>Orgnized expedition website, theme webdesign blogger travelblogger excursion webdesign WordPress. Wanderlust cute clean.</p>
                 </li>
                 <li>
+                    <i class="fas fa-leaf"></i>
                     <h3>guided nature excursions</h3>
                     <p>>Travelblogger excursion wanderlust design modern organized fun, whimsical Travel website adventure. Organized cute expedition.</p>
                 </li>
                 <li>
+                    <i class="fas fa-utensils"></i>
                     <h3>five star restaurants</h3>
                     <p>Orgnized expedition website, theme webdesign blogger travelblogger excursion webdesign WordPress. Wanderlust cute clean.</p>
                 </li>
                 <li>
+                    <i class="fas fa-glass-martini"></i>
                     <h3>all inclusize</h3>
                     <p>Travelblogger excursion wanderlust design modern organized fun, whimsical Travel website adventure. Organized cute expedition.</p>
                 </li>
                 <li>
+                    <i class="fas fa-bell"></i>
                     <h3>wake up service</h3>
                     <p>Orgnized expedition website, theme webdesign blogger travelblogger excursion webdesign WordPress. Wanderlust cute clean.</p>
                 </li>
@@ -74,40 +85,44 @@
             <aside>
                 <img src="./sunshine-assets/home-3.jpeg" alt="moutain and ocean">
             </aside>
-            
+        </section> 
+
         <section class="clientSection">
-            <div>
-                <h4>Testimonial</h4>
-                <h2>What clients say</h2>
-                <p>"Clean traveler organized simple wanderlust adventure traveler wanderlust darn. Whimsical expedition darn WordPress
-                adventure theme wanderlust. Simple clean Travel expedition design, whimsical whimsical wanderlust WordPress design
-                colorful."</p>
-                <ul>
-                    <li><i class="far fa-star"></i></li>
-                    <li><i class="far fa-star"></i></li>
-                    <li><i class="far fa-star"></i></li>
-                    <li><i class="far fa-star"></i></li>
-                    <li><i class="far fa-star"></i></li>
-                    <li><i class="far fa-star"></i></li>
-                </ul>
-                <p><span>Adam Levine</span> - Review from <a href="#">TripAdvisor</a></p>
-                <!-- arrows for flipping page -->
-                <i class="fas fa-chevron-right"></i>
-                <i class="fas fa-chevron-left"></i>
-            </div>
-            <div>
-                <h4>Explore</h4>
-                <h2>Gallery</h2>
-                <ul>
-                    <li><img src="./sunshine-assets/home-3.jpeg" alt="calathea leaves"></li>
-                    <li><img src="./sunshine-assets/home-5.jpeg" alt="air view of a woman in bikini laying on water"></li>
-                    <li><img src="./sunshine-assets/home-6.jpeg" alt="ocean wave"></li>
-                    <li><img src="./sunshine-assets/home-7.jpeg" alt="some beach chairs and two paml trees, an ocean front views"></li>
-                    <li><img src="./sunshine-assets/home-8.jpeg" alt="suitcase laying on the ground, inside it are a men's beach hat, a camera and some clothes"></li>
-                    <li><img src="./sunshine-assets/home-9.jpeg" alt="back shot of a man standing in front of a small fall"></li>
-                </ul>
+            <div class="wrapper">
+                <div class="clientSectionOne">
+                    <h4>Testimonial</h4>
+                    <h2>What clients say</h2>
+                    <p>"Clean traveler organized simple wanderlust adventure traveler wanderlust darn. Whimsical expedition darn WordPress
+                    adventure theme wanderlust. Simple clean Travel expedition design, whimsical whimsical wanderlust WordPress design
+                    colorful."</p>
+                    <ul class="starRating">
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                    </ul>
+                    <p><span>Adam Levine</span> - Review from <a href="#">TripAdvisor</a></p>
+                    <!-- arrows for flipping page -->
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <h2>Gallery</h2>
+                    <ul>
+                        <li><img src="./sunshine-assets/home-4.jpeg" alt="calathea leaves"></li>
+                        <li><img src="./sunshine-assets/home-5.jpeg" alt="air view of a woman in bikini laying on water"></li>
+                        <li><img src="./sunshine-assets/home-6.jpeg" alt="ocean wave"></li>
+                        <li><img src="./sunshine-assets/home-7.jpeg" alt="some beach chairs and two paml trees, an ocean front views"></li>
+                        <li><img src="./sunshine-assets/home-8.jpeg" alt="suitcase laying on the ground, inside it are a men's beach hat, a camera and some clothes"></li>
+                        <li><img src="./sunshine-assets/home-9.jpeg" alt="back shot of a man standing in front of a small fall"></li>
+                    </ul>
+                </div>
             </div>
         </section>
+
         <section class="contactSectionOne">
             <aside>
                 <img src="./sunshine-assets/home-10.jpeg" alt="air view of people paddling and canoeing in shallow ocean water surraound by palm trees">
