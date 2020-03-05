@@ -1,3 +1,4 @@
+
 /* Introduction Section */
 .introSection{
     background-color:#EDEDED;
@@ -6,9 +7,25 @@
 .introContent{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-    padding-top:12rem;
+    justify-content:space-evenly;
+    padding:12rem 12rem 0 12rem;
+
+    & h2{
+        font-size:4.8rem;
+        letter-spacing:-1.2px;
+    }
+    & aside{
+        position:relative;
+    }
+
+    /* adding a decorative short line on top of the title */
+    & h2:before{
+        content:" ";
+        display:block;
+        width:4.5rem;;
+        border-top:3px solid black;
+        padding-bottom: 5rem;
+    }
 }
 h4{
     font-size: 1.6rem;
@@ -19,31 +36,16 @@ h4{
     color:#999999;
 }
 
-.introContent h2{
-    font-size:4.8rem;
-    letter-spacing:-1.2px;
-}
-
 .introWords{
     display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-}
-.introContent aside{
-    position:relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
 .introWords,
 .introContent aside{
     flex:1 1 400px;
-}
-
-/* adding a decorative short line on top of the title */
-.introContent h2:before{
-    content:" ";
-    display:block;
-    width:4.5rem;;
-    border-top:3px solid black;
 }
 
 /* adding a frame for the about section's image */
@@ -54,43 +56,253 @@ h4{
 /* place the circle logo in the right position */
 .circleLogo{
     position:absolute;
-    bottom:-5rem;
-    left:-10rem;
+    bottom:-12rem;
+    left:-12rem;
     z-index:1;
 }
 
 /* offer of the hotel section styling */
 .offerSection{
-    display: flex;
+    background-image: url(../sunshine-assets/home-3.jpeg);
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // width:50%;
+    height:120vh;
+}
+
+.offerSection ul{
+    float:left;
+    width:60%;
+    height:100vh;
+}
+
+.offerSection ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:12rem;
+}
+.offerSection li{
+    flex:1 1 50%;
+    display:flex;
+}
+.offerSection h3,
+.offerSection i{
+    font-size:1.6rem;
+    font-weight:600;
+    color: #000000;
+    text-transform: uppercase;
+    padding-bottom:1rem;
+}
+
+.offerCotent{
+    padding-left:1rem;
+    width:80%;
 }
 
 /* testimonial section styling */
 
 .clientSection{
     background-image: url(../sunshine-assets/pattern.png);
+    padding:5rem;
+
+    & h2{
+        font-size:5.8rem;
+        letter-spacing:-1.4px;
+        text-transform: capitalize;
+    }
 }
 
-.clientSection h2{
-    font-size:5.8rem;
-    letter-spacing:-1.4px;
-    text-transform: capitalize;
-}
-
-.clientSectionOne{
+.clientContent{
     background-color: #ffffff;
-    height:50rem;
-    padding: 0 10rem;
+    height:80vh;
+    padding: 5rem 10rem;
     display:flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
+    position:relative;
+
+    & p:nth-child(3){
+        font-family:'Playfair Display', serif;
+        font-size:2.4rem;
+        font-style:italic;
+        line-height: 3.6rem;
+        color:#000000;
+        padding-top:3rem;
+    }
 }
 
 .starRating{
     display:flex;
 }
-.starRating i{
+.fa-star{
     color:#F6AB09;
     font-size:3rem;
 }
 
+// position the arrows
+.fa-chevron-right,
+.fa-chevron-left{
+    position:absolute;
+    z-index:1;
+    font-size: 4rem;
+}
+
+.fa-chevron-left{
+    top:50%;
+    left:-8%;
+}
+
+.fa-chevron-right{
+    top:50%;
+    right:-8%;
+}
+
+// gallery styling
+.galleryContent{
+    padding:13rem 0;
+    & h4,
+    & h2{
+        padding-bottom:3rem;
+    }
+    & h2{
+        text-align:center;
+    }
+    & ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & li{
+        width:calc((100% / 3) - 2rem);
+        margin:1rem;
+    }
+    & img{
+        width:100%;
+    }
+}
+
+// contact section 
+.contactSectionImg{
+    background-image: url(../sunshine-assets/home-10.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:55%;
+    height:100vh;
+}
+
+.contactSectionOne{
+    display: flex;
+    flex-wrap: wrap;
+
+    & h2{
+        font-size:5.8rem;
+        letter-spacing:-1.4px;
+        text-transform: capitalize;
+        padding-bottom: 10rem;
+    }
+
+    & span{
+        letter-spacing:-1.4px;
+        text-transform: capitalize;
+    }
+
+    & p:nth-of-type(3){
+        font-weight: 600;
+        padding:4rem 0 0 0;
+    }
+    & p:nth-of-type(4){
+        font-family:'Playfair Display', serif ;
+        font-size: 2.4rem;
+        color: #000000;
+    }   
+}
+
+.contactOneContent{
+    width:45%;
+    padding: 10rem 0 10rem 5rem;
+    & h4{
+        text-align:left;
+        padding-bottom: 2rem;
+    }
+    & .city{
+    font-size:2.4rem;
+    }
+}
+.city,
+.ourEmail span{
+    font-family:'Playfair Display', serif; 
+}
+
+.address{
+    padding-bottom:3rem;
+}
+
+// footer
+footer{
+    background-color: #000000;
+    height:50vh;
+
+    & a,
+    & i,
+    & label{
+        color:#CCCCCC;
+    }
+
+    & a{
+        font-size: 1.4rem;
+        line-height: 3rem;
+        text-transform: capitalize;
+    }
+
+    & label,
+    & input[type=email]{
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+    & input[type= email ]{
+        appearance:none;
+        background-color:#000000;
+        border:none;
+        width:95%;
+        color:white;
+        padding: 1rem 0;
+        font-size:1.4rem;
+        border-bottom: 1px solid #CCCCCC;
+    }
+    & i{
+        font-size:1.4rem;
+    }
+}
+
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    padding:5rem 0;
+    height:100%;
+}
+
+.footerLeft,
+.footerMid{
+    width:20%;
+}
+.footerRight{
+    width:50%;
+}
+
+// footer bottom-  copyright 
+.footerBottom{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    padding-top:3rem;
+}
+
+.footerIcon{
+    display:flex;
+    width:20%;
+    justify-content: space-between;
+}

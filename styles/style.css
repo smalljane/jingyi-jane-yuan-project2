@@ -262,12 +262,23 @@ span {
   color: #000000;
 }
 
-/* styling header */
+/* styling header for three pages*/
 .headerBackground {
-  background-image: url(../sunshine-assets/home-1.jpeg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.homePage .headerBackground {
+  background-image: url(../sunshine-assets/home-1.jpeg);
+}
+
+.blogPage .headerBackground {
+  background-image: url(../sunshine-assets/blog-1.jpeg);
+}
+
+.contactPage .headerBackground {
+  background-image: url(../sunshine-assets/contact-1.jpeg);
 }
 
 /* layout and text styling of nav section */
@@ -333,13 +344,28 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 12rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 12rem 12rem 0 12rem;
+  /* adding a decorative short line on top of the title */
+}
+
+.introContent h2 {
+  font-size: 4.8rem;
+  letter-spacing: -1.2px;
+}
+
+.introContent aside {
+  position: relative;
+}
+
+.introContent h2:before {
+  content: " ";
+  display: block;
+  width: 4.5rem;
+  border-top: 3px solid black;
+  padding-bottom: 5rem;
 }
 
 h4 {
@@ -351,11 +377,6 @@ h4 {
   color: #999999;
 }
 
-.introContent h2 {
-  font-size: 4.8rem;
-  letter-spacing: -1.2px;
-}
-
 .introWords {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,13 +385,10 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.introContent aside {
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5rem;
 }
 
 .introWords,
@@ -378,14 +396,6 @@ h4 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
-}
-
-/* adding a decorative short line on top of the title */
-.introContent h2:before {
-  content: " ";
-  display: block;
-  width: 4.5rem;
-  border-top: 3px solid black;
 }
 
 /* adding a frame for the about section's image */
@@ -396,21 +406,67 @@ h4 {
 /* place the circle logo in the right position */
 .circleLogo {
   position: absolute;
-  bottom: -5rem;
-  left: -10rem;
+  bottom: -12rem;
+  left: -12rem;
   z-index: 1;
 }
 
 /* offer of the hotel section styling */
 .offerSection {
+  background-image: url(../sunshine-assets/home-3.jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120vh;
+}
+
+.offerSection ul {
+  float: left;
+  width: 60%;
+  height: 100vh;
+}
+
+.offerSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12rem;
+}
+
+.offerSection li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.offerSection h3,
+.offerSection i {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.offerCotent {
+  padding-left: 1rem;
+  width: 80%;
+}
+
 /* testimonial section styling */
 .clientSection {
   background-image: url(../sunshine-assets/pattern.png);
+  padding: 5rem;
 }
 
 .clientSection h2 {
@@ -419,10 +475,10 @@ h4 {
   text-transform: capitalize;
 }
 
-.clientSectionOne {
+.clientContent {
   background-color: #ffffff;
-  height: 50rem;
-  padding: 0 10rem;
+  height: 80vh;
+  padding: 5rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +492,16 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.clientContent p:nth-child(3) {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-style: italic;
+  line-height: 3.6rem;
+  color: #000000;
+  padding-top: 3rem;
 }
 
 .starRating {
@@ -444,7 +510,198 @@ h4 {
   display: flex;
 }
 
-.starRating i {
+.fa-star {
   color: #F6AB09;
   font-size: 3rem;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  position: absolute;
+  z-index: 1;
+  font-size: 4rem;
+}
+
+.fa-chevron-left {
+  top: 50%;
+  left: -8%;
+}
+
+.fa-chevron-right {
+  top: 50%;
+  right: -8%;
+}
+
+.galleryContent {
+  padding: 13rem 0;
+}
+
+.galleryContent h4,
+.galleryContent h2 {
+  padding-bottom: 3rem;
+}
+
+.galleryContent h2 {
+  text-align: center;
+}
+
+.galleryContent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galleryContent li {
+  width: calc((100% / 3) - 2rem);
+  margin: 1rem;
+}
+
+.galleryContent img {
+  width: 100%;
+}
+
+.contactSectionImg {
+  background-image: url(../sunshine-assets/home-10.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55%;
+  height: 100vh;
+}
+
+.contactSectionOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactSectionOne h2 {
+  font-size: 5.8rem;
+  letter-spacing: -1.4px;
+  text-transform: capitalize;
+  padding-bottom: 10rem;
+}
+
+.contactSectionOne span {
+  letter-spacing: -1.4px;
+  text-transform: capitalize;
+}
+
+.contactSectionOne p:nth-of-type(3) {
+  font-weight: 600;
+  padding: 4rem 0 0 0;
+}
+
+.contactSectionOne p:nth-of-type(4) {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #000000;
+}
+
+.contactOneContent {
+  width: 45%;
+  padding: 10rem 0 10rem 5rem;
+}
+
+.contactOneContent h4 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.contactOneContent .city {
+  font-size: 2.4rem;
+}
+
+.city,
+.ourEmail span {
+  font-family: 'Playfair Display', serif;
+}
+
+.address {
+  padding-bottom: 3rem;
+}
+
+footer {
+  background-color: #000000;
+  height: 50vh;
+}
+
+footer a,
+footer i,
+footer label {
+  color: #CCCCCC;
+}
+
+footer a {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+
+footer label,
+footer input[type=email] {
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+
+footer input[type=email] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #000000;
+  border: none;
+  width: 95%;
+  color: white;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+footer i {
+  font-size: 1.4rem;
+}
+
+.footerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 0;
+  height: 100%;
+}
+
+.footerLeft,
+.footerMid {
+  width: 20%;
+}
+
+.footerRight {
+  width: 50%;
+}
+
+.footerBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  padding-top: 3rem;
+}
+
+.footerIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

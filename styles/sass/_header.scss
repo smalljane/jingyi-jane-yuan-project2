@@ -1,10 +1,23 @@
-/* styling header */
+/* styling header for three pages*/
 .headerBackground{
-    background-image:url(../sunshine-assets/home-1.jpeg);
     height:100vh;
     background-size:cover;
     background-repeat:no-repeat
 }
+
+.homePage .headerBackground{
+    background-image:url(../sunshine-assets/home-1.jpeg);
+
+}
+
+.blogPage .headerBackground{
+    background-image:url(../sunshine-assets/blog-1.jpeg);
+}
+
+.contactPage .headerBackground{
+    background-image:url(../sunshine-assets/contact-1.jpeg);
+}
+
 /* layout and text styling of nav section */
 .navBar{
     height:15vh;
