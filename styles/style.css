@@ -632,7 +632,8 @@ footer {
 footer a,
 footer i,
 footer label {
-  color: #CCCCCC;
+  color: #999999;
+  font-weight: 400;
 }
 
 footer a {
@@ -657,7 +658,7 @@ footer input[type=email] {
   color: white;
   padding: 1rem 0;
   font-size: 1.4rem;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #999999;
 }
 
 footer i {
@@ -692,7 +693,7 @@ footer i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border-top: 1px solid #CCCCCC;
+  border-top: 1px solid #999999;
   padding-top: 3rem;
 }
 
@@ -704,4 +705,244 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main {
+  background-color: #EDEDED;
+}
+
+.mainSection {
+  background-color: white;
+  padding: 0 5rem;
+}
+
+main h1 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.blogNav {
+  text-align: center;
+}
+
+main p:first-child span {
+  color: #000000;
+}
+
+.mainSection h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+}
+
+.blogArticle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+  border-bottom: 2px solid #EDEDED;
+}
+
+.blogArticle img {
+  border-radius: 50%;
+}
+
+article {
+  padding: 3rem 0 5rem 0;
+}
+
+article .socialNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+article .socialNav .fab {
+  color: #999999;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+}
+
+article .socialNav .fa-twitter {
+  color: #00acee;
+}
+
+article .socialNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article p {
+  padding-top: 2.5rem;
+}
+
+article p:first-child {
+  color: #000000;
+}
+
+.threeArticles h2 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+  border-bottom: 2px solid #EDEDED;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.threeArticles ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.threeArticles li {
+  width: calc((100% / 3));
+  margin-left: 2rem;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  border-bottom: 3px solid #EDEDED;
+}
+
+.threeArticles li:first-child {
+  margin-left: 0;
+}
+
+.threeArticles a {
+  color: #999999;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 3rem 0;
+}
+
+.threeArticles img {
+  width: 100%;
+}
+
+.threeArticles p, .threeArticles h5 {
+  padding-top: 1.5rem;
+}
+
+.commentsSection h2 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+  border-bottom: 2px solid #EDEDED;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.commentsSection li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 3rem;
+}
+
+.commentsSection .commentBox {
+  position: relative;
+  height: auto;
+  padding: 2rem;
+  background-color: #EDEDED;
+}
+
+.commentsSection .tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  background: transparent;
+  border: 10px solid #EDEDED;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.commentsSection .comment span {
+  color: #A4F1DC;
+  font-style: italic;
+}
+
+.commentsSection .comment p:first-child {
+  color: #000000;
+}
+
+.commentsSection .comment p:last-child {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.feedBack h2 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+  border-bottom: 2px solid #EDEDED;
+  padding: 5rem 0 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.feedBack input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #EDEDED;
+}
+
+.feedBack ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.feedBack li {
+  width: calc(100% / 3);
+  margin-right: 3rem;
+}
+
+.feedBack li:last-child {
+  margin: 0;
+}
+
+.feedBack textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  width: 100%;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #EDEDED;
+}
+
+.feedBack button {
+  background-color: #84A016;
+  color: #EDEDED;
+  border: #84A016;
+  border-radius: 3px;
+  height: 5.5rem;
+  width: 20rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 5rem 0;
 }
