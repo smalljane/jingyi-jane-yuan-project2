@@ -6,7 +6,7 @@ footer{
     a,
     i,
     label{
-        color:#999999;
+        color:$bodyTextColor;
         font-weight: 400;
     }
 
@@ -33,7 +33,7 @@ footer{
         color:white;
         padding: 1rem 0;
         font-size:1.4rem;
-        border-bottom: 1px solid #999999;
+        border-bottom: 1px solid $bodyTextColor;
     }
     i{
         font-size:1.4rem;
@@ -67,7 +67,7 @@ footer{
         display:flex;
         justify-content: space-between;
         width: 100%;
-        border-top: 1px solid #999999;
+        border-top: 1px solid $bodyTextColor;
         padding-top:3rem;
     }
 

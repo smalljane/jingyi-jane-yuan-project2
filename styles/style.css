@@ -226,7 +226,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -253,7 +253,7 @@ p {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
@@ -317,7 +317,7 @@ header .navRight {
 }
 
 header h1, header h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 5.8rem;
   font-weight: 700;
   text-align: center;
@@ -358,6 +358,12 @@ header .fa-shopping-bag:after {
   position: absolute;
   top: 13px;
   left: 8px;
+}
+
+@media (max-width: 1100px) {
+  header h1, header h2 {
+    font-size: 5rem;
+  }
 }
 
 /* Introduction Section */
@@ -522,7 +528,7 @@ h4 {
 }
 
 .clientContent p:nth-child(3) {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   font-style: italic;
   line-height: 3.6rem;
@@ -625,7 +631,7 @@ h4 {
 }
 
 .contactSectionOne p:nth-of-type(4) {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   color: #000000;
 }
@@ -646,7 +652,7 @@ h4 {
 
 .city,
 .ourEmail span {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .address {
@@ -755,7 +761,7 @@ footer .footerIcon {
 }
 
 .mainSection {
-  background-color: white;
+  background-color: #ffffff;
   padding: 0 5rem;
 }
 
@@ -771,12 +777,8 @@ footer .footerIcon {
   text-align: center;
 }
 
-.blogPage main p:first-child span {
-  color: #000000;
-}
-
 .mainSection h5 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.4em;
 }
 
@@ -889,6 +891,15 @@ article p:first-child {
   padding-left: 1rem;
 }
 
+.threeArticles li:hover a,
+.threeArticles li:hover i {
+  color: #000000;
+}
+
+.threeArticles li:hover h5 {
+  text-decoration: underline;
+}
+
 .threeArticles a {
   color: #999999;
   font-weight: 600;
@@ -965,9 +976,9 @@ article p:first-child {
   font-size: 4.8rem;
   line-height: 6rem;
   letter-spacing: -1.2px;
-  border-bottom: 2px solid #EDEDED;
   padding: 5rem 0 2rem 0;
   margin-bottom: 4rem;
+  border-bottom: 2px solid #EDEDED;
 }
 
 .feedBack input {
@@ -975,10 +986,11 @@ article p:first-child {
      -moz-appearance: none;
           appearance: none;
   border: none;
+  border-bottom: 2px solid #EDEDED;
   width: 100%;
   padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
-  border-bottom: 2px solid #EDEDED;
 }
 
 .feedBack ul {
@@ -1003,6 +1015,7 @@ article p:first-child {
           appearance: none;
   border: none;
   width: 100%;
+  font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   border-bottom: 2px solid #EDEDED;
 }
@@ -1018,6 +1031,10 @@ article p:first-child {
   font-weight: 600;
   text-transform: uppercase;
   margin: 5rem 0;
+}
+
+.feedBack button:hover {
+  color: #000000;
 }
 
 .contactPage h1, h2 {
@@ -1051,7 +1068,7 @@ article p:first-child {
 }
 
 .contactDetails h5 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   padding: 2rem 0 1rem;
   line-height: 3.6rem;
@@ -1074,6 +1091,7 @@ article p:first-child {
   width: 100%;
   padding: 1rem 0;
   font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
   border-bottom: 2px solid #EDEDED;
 }
 
@@ -1100,6 +1118,7 @@ article p:first-child {
   border: none;
   width: 100%;
   font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
   border-bottom: 2px solid #EDEDED;
 }
 

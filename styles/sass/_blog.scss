@@ -1,9 +1,9 @@
 // background for main
 .blogPage main{
-    background-color: #EDEDED;
+    background-color: $borderColor;
 }
 .mainSection{
-    background-color:white;
+    background-color:#ffffff;
     padding: 0 5rem;
 }
 
@@ -19,12 +19,8 @@
     text-align:center;
 }
 
-.blogPage main p:first-child span{
-    color:#000000;
-}
-
 .mainSection h5{
-    font-family:'Playfair Display', serif;
+    font-family:$headerFont;
     font-size:1.4em;
 }
 
@@ -35,7 +31,7 @@
         align-items: flex-end;
         padding-bottom: 3rem;
         margin-top:5rem;
-        border-bottom: 2px solid #EDEDED;
+        border-bottom: 2px solid $borderColor;
     }
     li:first-child{
         flex-shrink: 2;
@@ -47,7 +43,6 @@
     img{
         border-radius: 50%;
     }
-
 }
 
 // blog
@@ -60,7 +55,7 @@ article{
         padding:3rem 0;
         
         .fab{
-            color:#999999;
+            color:$bodyTextColor;
             font-size:1.6rem;
             padding-left:2rem
         }
@@ -90,7 +85,7 @@ article{
         font-size: 4.8rem;
         line-height:6rem;
         letter-spacing:-1.2px;
-        border-bottom: 2px solid #EDEDED;
+        border-bottom: 2px solid $borderColor;
         padding-bottom: 2rem;
         margin-bottom: 4rem;
     }
@@ -117,8 +112,17 @@ article{
     .articleIntro{
         padding-left:1rem;
     }
+
+    li:hover a,
+    li:hover i{
+        color:#000000;
+    }
+    li:hover h5{
+        text-decoration: underline;
+    }
+
     a{
-      color:#999999;
+      color:$bodyTextColor;
       font-weight:600;
       text-transform: capitalize;
       display:inline-block;
@@ -139,7 +143,7 @@ article{
         font-size: 4.8rem;
         line-height:6rem;
         letter-spacing:-1.2px;
-        border-bottom: 2px solid #EDEDED;
+        border-bottom: 2px solid $borderColor;
         padding: 2rem 0;
         margin-bottom: 4rem;
     }
@@ -154,7 +158,7 @@ article{
         // max-width: 300px;
         height: auto;
         padding: 2rem;
-        background-color: #EDEDED;
+        background-color: $borderColor;
         border-radius:2px;
     }
     .tip {
@@ -164,7 +168,7 @@ article{
         left: -19px;
         top: 10px;
         background: transparent;
-        border: 10px solid #EDEDED;
+        border: 10px solid $borderColor;
         border-top-color: transparent;
         border-left-color: transparent;
         border-bottom-color: transparent;  
@@ -185,26 +189,26 @@ article{
 }
 // User Feedback form 
 .feedBack{
-        h2{
+    h2{
         font-size: 4.8rem;
         line-height:6rem;
         letter-spacing:-1.2px;
-        border-bottom: 2px solid #EDEDED;
         padding: 5rem 0 2rem 0;
         margin-bottom: 4rem;
+        border-bottom: 2px solid $borderColor;
     }
     input{
         appearance:none;
         border:none;
+        border-bottom: 2px solid $borderColor;
         width:100%;
         padding: 1rem 0;
+        font-family: $bodyFont;
         font-size:1.4rem;
-        border-bottom: 2px solid #EDEDED;
     }
     ul{
         display: flex;
         padding-bottom: 4rem;
-       
     }
     li{
         width:calc(100% / 3);
@@ -219,12 +223,13 @@ article{
         appearance:none;
         border:none;
         width:100%;
+        font-family: $bodyFont;
         font-size:1.4rem;
-        border-bottom: 2px solid #EDEDED;
+        border-bottom: 2px solid $borderColor;
     }
     button{
         background-color: #84A016;
-        color:#EDEDED;
+        color:$borderColor;
         border:#84A016;
         border-radius: 3px;
         height:5.5rem;
@@ -233,6 +238,10 @@ article{
         font-weight: 600;
         text-transform: uppercase;
         margin:5rem 0;
+    }
+
+    button:hover{
+        color:#000000;
     }
 
 }

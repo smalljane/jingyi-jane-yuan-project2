@@ -34,7 +34,7 @@ h4{
     letter-spacing:8px;
     text-align:center;
     text-transform: uppercase;
-    color:#999999;
+    color:$bodyTextColor;
 }
 
 .introWords{
@@ -126,7 +126,7 @@ h4{
     position:relative;
 
     p:nth-child(3){
-        font-family:'Playfair Display', serif;
+        font-family:$headerFont;
         font-size:2.4rem;
         font-style:italic;
         line-height: 3.6rem;
@@ -142,9 +142,7 @@ h4{
         font-size:3rem;
     }
     i:hover{
-        
-        color:#999999;
-    
+        color:$bodyTextColor;
     }
 }
 
@@ -219,7 +217,7 @@ h4{
         padding:4rem 0 0 0;
     }
     p:nth-of-type(4){
-        font-family:'Playfair Display', serif ;
+        font-family:$headerFont;
         font-size: 2.4rem;
         color: #000000;
     }   
@@ -238,7 +236,7 @@ h4{
 }
 .city,
 .ourEmail span{
-    font-family:'Playfair Display', serif; 
+    font-family:$headerFont; 
 }
 
 .address{

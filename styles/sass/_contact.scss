@@ -15,15 +15,14 @@
     }
     ul{
         display: flex;
-        // justify-content: space-between;
     }
     li{
         width:calc(100% / 3);
         padding: 6rem 0 4rem 5rem;
-        border-right: 2px solid #EDEDED;
+        border-right: 2px solid $borderColor;
     }
     h5{
-        font-family: 'Playfair Display', serif;
+        font-family: $headerFont;
         font-size:2.4rem;
         padding:2rem 0 1rem;
         line-height:3.6rem;
@@ -44,7 +43,8 @@
         width:100%;
         padding: 1rem 0;
         font-size:1.4rem;
-        border-bottom: 2px solid #EDEDED;
+        font-family: $bodyFont;
+        border-bottom: 2px solid $borderColor;
     }
     ul{
         display: flex;
@@ -65,7 +65,8 @@
         border:none;
         width:100%;
         font-size:1.4rem;
-        border-bottom: 2px solid #EDEDED;
+        font-family: $bodyFont;
+        border-bottom: 2px solid $borderColor;
     }
     button{
         appearance:none;
