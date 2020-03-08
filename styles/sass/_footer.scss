@@ -3,24 +3,29 @@ footer{
     background-color: #000000;
     height:50vh;
 
-    & a,
-    & i,
-    & label{
+    a,
+    i,
+    label{
         color:#999999;
         font-weight: 400;
     }
 
-    & a{
+    a:hover,
+    i:hover{
+            color:#ffffff;
+        }
+
+    a{
         font-size: 1.4rem;
         line-height: 3rem;
         text-transform: capitalize;
     }
-    & label,
-    & input[type=email]{
+    label,
+    input[type=email]{
         font-size: 1.4rem;
         line-height: 3rem;
     }
-    & input[type= email ]{
+    input[type= email ]{
         appearance:none;
         background-color:#000000;
         border:none;
@@ -30,37 +35,49 @@ footer{
         font-size:1.4rem;
         border-bottom: 1px solid #999999;
     }
-    & i{
+    i{
         font-size:1.4rem;
     }
+
+    .footerTop{
+        display: flex;
+        justify-content: space-between;
+        padding:5rem 0;
+        height:100%;
+    }
+
+    .footerLeft,
+    .footerMid{
+        width:20%;
+    }
+    .footerRight{
+        width:50%;
+    }
+
+    .footerLeft,
+    .footerMid{
+        width:20%;
+    }
+    .footerRight{
+        width:50%;
+    }
+
+    // footer bottom-  copyright 
+    .footerBottom{
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid #999999;
+        padding-top:3rem;
+    }
+
+    .footerIcon{
+        display:flex;
+        width:20%;
+        justify-content: space-between;
+    }
+
 }
 
-.footerTop{
-    display: flex;
-    justify-content: space-between;
-    padding:5rem 0;
-    height:100%;
-}
 
-.footerLeft,
-.footerMid{
-    width:20%;
-}
-.footerRight{
-    width:50%;
-}
 
-// footer bottom-  copyright 
-.footerBottom{
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    border-top: 1px solid #999999;
-    padding-top:3rem;
-}
-
-.footerIcon{
-    display:flex;
-    width:20%;
-    justify-content: space-between;
-}

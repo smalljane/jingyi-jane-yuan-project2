@@ -2,7 +2,7 @@
 /* Introduction Section */
 .introSection{
     background-color:#EDEDED;
-    padding: 15rem 0;
+    padding: 15rem 0 25rem;
 }
 .introContent{
     display: flex;
@@ -10,16 +10,16 @@
     justify-content:space-evenly;
     padding:12rem 12rem 0 12rem;
 
-    & h2{
+    h2{
         font-size:4.8rem;
         letter-spacing:-1.2px;
     }
-    & aside{
+    aside{
         position:relative;
     }
 
     /* adding a decorative short line on top of the title */
-    & h2:before{
+    h2:before{
         content:" ";
         display:block;
         width:4.5rem;;
@@ -27,6 +27,7 @@
         padding-bottom: 5rem;
     }
 }
+
 h4{
     font-size: 1.6rem;
     font-weight:700;
@@ -67,39 +68,38 @@ h4{
     background-position:right;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color:#ffffff;
     // width:50%;
     height:120vh;
-}
+    ul{
+        float:left;
+        width:60%;
+        height:100vh;
+        // flex the lists
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-top:12rem;
+    }
+        
+    li{
+        flex:1 1 50%;
+        display:flex;
+    }
+    h3,
+    i{
+        font-size:1.6rem;
+        font-weight:600;
+        color: #000000;
+        text-transform: uppercase;
+        padding-bottom:1rem;
+    }
 
-.offerSection ul{
-    float:left;
-    width:60%;
-    height:100vh;
-}
-
-.offerSection ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top:12rem;
-}
-.offerSection li{
-    flex:1 1 50%;
-    display:flex;
-}
-.offerSection h3,
-.offerSection i{
-    font-size:1.6rem;
-    font-weight:600;
-    color: #000000;
-    text-transform: uppercase;
-    padding-bottom:1rem;
-}
-
-.offerCotent{
-    padding-left:1rem;
-    width:80%;
+    .offerCotent{
+        padding-left:1rem;
+        width:80%;
+    }
 }
 
 /* testimonial section styling */
@@ -108,7 +108,7 @@ h4{
     background-image: url(../sunshine-assets/pattern.png);
     padding:5rem;
 
-    & h2{
+    h2{
         font-size:5.8rem;
         letter-spacing:-1.4px;
         text-transform: capitalize;
@@ -125,7 +125,7 @@ h4{
     align-items: center;
     position:relative;
 
-    & p:nth-child(3){
+    p:nth-child(3){
         font-family:'Playfair Display', serif;
         font-size:2.4rem;
         font-style:italic;
@@ -133,14 +133,19 @@ h4{
         color:#000000;
         padding-top:3rem;
     }
-}
 
-.starRating{
-    display:flex;
-}
-.fa-star{
-    color:#F6AB09;
-    font-size:3rem;
+    .starRating{
+        display:flex;
+    }
+    .fa-star{
+        color:#F6AB09;
+        font-size:3rem;
+    }
+    i:hover{
+        
+        color:#999999;
+    
+    }
 }
 
 // position the arrows
@@ -149,37 +154,37 @@ h4{
     position:absolute;
     z-index:1;
     font-size: 4rem;
+    top:50%;
 }
 
 .fa-chevron-left{
-    top:50%;
     left:-8%;
 }
 
 .fa-chevron-right{
-    top:50%;
     right:-8%;
 }
+    
 
 // gallery styling
 .galleryContent{
     padding:13rem 0;
-    & h4,
-    & h2{
+    h4,
+    h2{
         padding-bottom:3rem;
     }
-    & h2{
+    h2{
         text-align:center;
     }
-    & ul{
+    ul{
         display: flex;
         flex-wrap: wrap;
     }
-    & li{
+    li{
         width:calc((100% / 3) - 2rem);
         margin:1rem;
     }
-    & img{
+    img{
         width:100%;
     }
 }
@@ -197,23 +202,23 @@ h4{
     display: flex;
     flex-wrap: wrap;
 
-    & h2{
+    h2{
         font-size:5.8rem;
         letter-spacing:-1.4px;
         text-transform: capitalize;
         padding-bottom: 10rem;
     }
 
-    & span{
+    span{
         letter-spacing:-1.4px;
         text-transform: capitalize;
     }
 
-    & p:nth-of-type(3){
+    p:nth-of-type(3){
         font-weight: 600;
         padding:4rem 0 0 0;
     }
-    & p:nth-of-type(4){
+    p:nth-of-type(4){
         font-family:'Playfair Display', serif ;
         font-size: 2.4rem;
         color: #000000;
@@ -223,11 +228,11 @@ h4{
 .contactOneContent{
     width:45%;
     padding: 10rem 0 10rem 5rem;
-    & h4{
+    h4{
         text-align:left;
         padding-bottom: 2rem;
     }
-    & .city{
+    .city{
     font-size:2.4rem;
     }
 }

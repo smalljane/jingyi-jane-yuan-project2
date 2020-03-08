@@ -2,7 +2,7 @@
 .headerBackground{
     height:100vh;
     background-size:cover;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
 }
 
 .homePage .headerBackground{
@@ -15,36 +15,62 @@
 
 .contactPage .headerBackground{
     background-image:url(../sunshine-assets/contact-1.jpeg);
+    height:80vh;
 }
 
 /* layout and text styling of nav section */
-.navBar{
-    height:15vh;
-    display:flex;
-    align-items:center;
-}
-.navLeft{
-    display:flex;
-    justify-content:space-around;
-    flex:1 0 25%;
-}
+header{
+    .navBar{
+        height:15vh;
+        display:flex;
+        align-items:center;
+    }
+    .navLeft,
+    .navRight{
+        display:flex;
+        justify-content:space-between;
+        align-items: flex-end;
+        flex:1 0 25%;
+    }
 
-.navRight{
-    display:flex;
-    justify-content:space-between;
-    flex:1 0 25%; 
-}
-h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 5.8rem;
-    font-weight:700;
-    text-align:center;
-    line-height:2.6rem;
-    letter-spacing:1.4px;
-    flex:1 0 50%; 
-}
+    h1,h2{
+        font-family: 'Playfair Display', serif;
+        font-size: 5.8rem;
+        font-weight:700;
+        text-align:center;
+        line-height:2.6rem;
+        letter-spacing:1.4px;
+        flex:1 0 50%; 
+    }
 
-.navBar a{
-    font-size:1.4rem;
-    font-weight:600;
+    a{
+        font-size:1.4rem;
+        font-weight:600;
+    }
+
+    a:hover{
+        color:#999999;
+    }
+
+    .fas{
+        font-size:1.9rem;
+    }
+    .fa-shopping-bag{
+        position:relative;
+    }
+    .fa-shopping-bag:after{
+        font-family: 'Poppins', sans-serif;
+        font-size:1rem;
+        content:"2";
+        display:block;
+        color:black;
+        padding:0.4rem 0.6rem;
+        background-color:#A4F1DC ;
+        border:#A4F1DC;
+        border-radius:50%;
+        position:absolute;
+        top:13px;
+        left:8px;
+    }
+    
 }

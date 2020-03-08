@@ -1,44 +1,55 @@
 // background for main
-main{
+.blogPage main{
     background-color: #EDEDED;
 }
 .mainSection{
-    background-color: white;
+    background-color:white;
     padding: 0 5rem;
 }
 
-main h1{
+.blogPage h1{
     font-size: 4.8rem;
     line-height:6rem;
     letter-spacing:-1.2px;
     text-align:center;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
 }
 
 .blogNav {
     text-align:center;
 }
 
-main p:first-child span{
+.blogPage main p:first-child span{
     color:#000000;
 }
 
 .mainSection h5{
     font-family:'Playfair Display', serif;
-    font-size:1.6em;
+    font-size:1.4em;
 }
 
-.blogArticle ul{
-    display:flex;
-    justify-content: space-around;
-    margin-top:5rem;
-    border-bottom: 2px solid #EDEDED;
+.blogArticle {
+    ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 3rem;
+        margin-top:5rem;
+        border-bottom: 2px solid #EDEDED;
+    }
+    li:first-child{
+        flex-shrink: 2;
+    }
+
+    li:nth-of-type(2){
+        flex-grow:0.5;
+    }
+    img{
+        border-radius: 50%;
+    }
 
 }
 
-.blogArticle img{
-    border-radius: 50%;
-}
 // blog
 article{
     padding: 3rem 0 5rem 0;
@@ -62,14 +73,15 @@ article{
         display: flex;
     }
 
+    p{
+        padding-top:2.5rem;
+    }
+    
+    p:first-child{
+        color:#000000;
+    }
 }
 
-article p{
-    padding-top:2.5rem;
-}
-article p:first-child{
-    color:#000000;
-}
 
 // three article links
 
@@ -90,14 +102,21 @@ article p:first-child{
         width:calc((100% / 3));
         margin-left:2rem;
         line-height:3rem;
-        font-size:1.6rem;
-        border-bottom:3px solid #EDEDED;
+        font-size:1.4rem;
     }
 
     li:first-child{
         margin-left:0;
     }
-    
+    li{
+        box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 0px 0px rgba(0,0,0,0.1);
+    }
+    li:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.20), 0 10px 10px rgba(0,0,0,0.20)
+    }
+    .articleIntro{
+        padding-left:1rem;
+    }
     a{
       color:#999999;
       font-weight:600;
@@ -136,12 +155,13 @@ article p:first-child{
         height: auto;
         padding: 2rem;
         background-color: #EDEDED;
+        border-radius:2px;
     }
     .tip {
         width: 0px;
         height: 0px;
         position: absolute;
-        left: -20px;
+        left: -19px;
         top: 10px;
         background: transparent;
         border: 10px solid #EDEDED;
@@ -163,7 +183,7 @@ article p:first-child{
         letter-spacing:0.3px;
     }
 }
-
+// User Feedback form 
 .feedBack{
         h2{
         font-size: 4.8rem;

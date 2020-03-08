@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="contactPage">
+
     <header>
         <div class="wrapper navBar">
             <nav class="navLeft">
-                <a href="">Home</a>
-                <a href="">ABout</a>
+                <a href="./home.html">Home</a>
+                <a href="./home.html#about">Abhout</a>
                 <a href="">Reserve</a>
             </nav>
-            <h1>Sunshine</h1>
+            <h2>Sunshine</h2>
             <nav class="navRight">
-                <a href="">Blog</a>
-                <a href="">Contact</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contact.html">Contact</a>
                 <a href=""><i class="fas fa-search"></i></a>
                 <a href=""><i class="fas fa-shopping-bag"></i></a>
             </nav>
@@ -27,54 +28,63 @@
         <div class="headerBackground">
         </div>
     </header>
+
     <main>
-        <section>
-            <h1>Contact details</h1>
-            <p>Design adventure Travel, WordPress excursion pretty webdesign darn theme darn pretty expedition traveling. Travel cute blogger whimsical simple. </p>
-            <ul>
-                <li>
-                    <i class="fas fa-mobile-alt"></i>
-                    <h5>Phone</h5>
-                    <p>Phone 01:(0091) 8547 632521</p>
-                    <p>Phone 02:(084) 965 4788</p>
-                </li>
-                <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h5>Address</h5>
-                    <p>123 King Str, 4th Floor, Utlra Hosue Building,</p>
-                    <p>Honolulu, Hawaii.</p>
-                </li>
-                <li>
-                    <i class="fas fa-envelope"></i>
-                    <h5>Email</h5>
-                    <p>support@sunshine.com</p>
-                    <p>hello@sunshine.com</p>
-                </li>
-            </ul>
-        </section>
+        <div class="wrapper">
+            <section class="contactDetails">
+                <div class="contactInfo">
+                    <h1>Contact details</h1>
+                    <p>Design adventure Travel, WordPress excursion pretty webdesign darn theme darn pretty expedition traveling. Travel cute blogger whimsical simple. </p>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <h5>Phone</h5>
+                        <p>Phone 01: (0091) 8547 632521</p>
+                        <p>Phone 02: (084) 965 4788</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>Address</h5>
+                        <p>123 King Str, 4th Floor, Utlra Hosue Building</p>
+                        <p>Honolulu, Hawaii.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p>support@sunshine.com</p>
+                        <p>hello@sunshine.com</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Get in touch with us</h2>
-            <form action="">
-                <label for="name" aria-hidden="true">Name</label>
-                <input type="text" id="name" placeholder="Enter your name...">
-
-                <label for="email" aria-hidden="true">Email</label>
-                <input type="email" id="email" placeholder="youremail@domain.com">
-
-                <label for="subject" aria-hidden="true">Subject(optional)</label>
-                <input type="text" id="subject" placeholder="Subject(optional)">
-
-                <label for="comment" aria-hidden="true">Here goes your comment</label>
-                <textarea id="comment" cols="30" rows="10" placeholder="Here goes your comment"></textarea>
-                    
-                <button>send message</button>
-            </form>
-        </section>
-
-        <section>
-
-        </section>
+            <section class="feedBackTwo">
+                <h2>Get in touch with us</h2>
+                <p>Excursion pretty webdesign darn theme darn pretty expedition traveling.</p>
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="name" class="visuallyHidden">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name...">
+                        </li>
+                        <li>
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input type="email" id="email" placeholder="youremail@domain.com">
+                        </li>
+                        <li>
+                            <label for="subject" class="visuallyHidden">Subject (Optional)</label>
+                            <input type="text" id="subject" placeholder="Subject (Optional)">
+                        </li>
+                    </ul>
+                    <label for="comment" class="visuallyHidden">Here goes your message</label>
+                    <textarea id="comment" cols="30" rows="8" placeholder="Here goes your comment"></textarea>
+                    <button>send message</button>
+                </form>
+            </section>
+        </div>
+        <div class="lastBackground">
+            
+        </div>
     </main>
     <footer>
         <div class="wrapper">
