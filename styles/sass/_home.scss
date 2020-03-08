@@ -13,6 +13,7 @@
     h2{
         font-size:4.8rem;
         letter-spacing:-1.2px;
+        line-height:6rem;
     }
     aside{
         position:relative;
@@ -46,7 +47,7 @@ h4{
 
 .introWords,
 .introContent aside{
-    flex:1 1 400px;
+    flex:1 1 40rem;
 }
 
 /* adding a frame for the about section's image */
@@ -68,19 +69,17 @@ h4{
     background-position:right;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color:#ffffff;
-    // width:50%;
     height:120vh;
     ul{
+        background-color:white;
         float:left;
-        width:60%;
-        height:100vh;
+        width:65%;
+        height:120vh;
         // flex the lists
         display:flex;
         flex-wrap:wrap;
-        justify-content: space-around;
         align-items: center;
-        padding-top:12rem;
+        padding:12rem 0;
     }
         
     li{
@@ -107,6 +106,7 @@ h4{
 .clientSection{
     background-image: url(../sunshine-assets/pattern.png);
     padding:5rem;
+    clear:both;
 
     h2{
         font-size:5.8rem;
@@ -132,6 +132,7 @@ h4{
         line-height: 3.6rem;
         color:#000000;
         padding-top:3rem;
+        text-align: center;
     }
 
     .starRating{
@@ -231,15 +232,261 @@ h4{
         padding-bottom: 2rem;
     }
     .city{
-    font-size:2.4rem;
+        font-size:2.4rem;
+    }
+
+    .city,
+    .ourEmail span{
+        font-family:$headerFont; 
+    }
+
+    .address{
+        padding-bottom:3rem;
     }
 }
-.city,
-.ourEmail span{
-    font-family:$headerFont; 
+
+
+@media (max-width:1300px){
+    .introSection{
+        padding: 10rem 0 5rem;
+    }
+    .introContent{
+        justify-content:space-between;
+        padding:10rem 0 ;
+        h2{
+            font-size:4rem;
+        }
+        h2:before{
+            padding-bottom: 3rem;
+        }
+    }
+    .circleLogo{
+        bottom:-10rem;
+        left:-8rem;
+    }
+}
+@media (max-width:999px){
+    .introSection{
+        padding: 7rem 0 3rem;
+    }
+
+    .introContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:6rem 0 0 0 ;
+        h2:before{
+            display:none;
+        }
+    }
+
+    .homeImgOne{
+        margin-bottom:2rem
+    }
+    .circleLogo{
+        display:none;
+    }
+    .introWords{
+        justify-content: space-around;
+        padding-bottom: 3rem;
+        flex: 1 1 30rem;
+    }
+    // ..........
+    .offerSection{
+        background-position:top;
+        background-size: cover;
+        height:auto;
+        ul{
+            background-color:rgba(255, 255, 255, 0.8);
+            height:100vh;
+            width:100%;
+            float:none;
+            padding: 7rem 0 7rem 2rem;
+        }
+        p{
+            color:#616060;
+        }
+    }
+    // ......testimonial section
+
+    .clientSection{
+        padding:4rem;
+        h2{
+            font-size:4.8rem;
+        }
+    }
+    .clientContent{
+        padding:3rem 6rem;
+        p:nth-child(3){
+            font-size:2rem;
+            line-height: 3rem;
+            padding-top:1rem;
+        }
+    }
+
+    .fa-chevron-right,
+    .fa-chevron-left{
+        font-size: 3rem;
+    }
+
+    // ........gallery
+    .galleryContent{
+        padding:8rem 0;
+            li{
+            width:calc((100% / 2) - 2rem);
+            margin:1rem;
+        }
+    }
+
+    // ..........contactSection
+    .contactSectionImg{
+        display:none;
+    }
+
+    .contactSectionOne{
+        display:block;
+        background-image: url(../sunshine-assets/home-10.jpeg);
+        h2{
+            font-size:4.8rem;
+            padding-bottom: 4rem;
+        }
+        p:nth-of-type(3){
+            padding:2rem 0 0 0;
+        }
+    }
+
+    .contactOneContent{
+        background-color: rgba(255, 255, 255, 0.8);
+        width:80%;
+        padding: 7rem 0 7rem 5rem;
+        h4{
+            text-align:left;
+            padding-bottom: 2rem;
+        }
+        .city,
+        .ourEmail span{
+            font-family:$headerFont; 
+        }
+
+        .address{
+            padding-bottom:3rem;
+        }
+    }
 }
 
-.address{
-    padding-bottom:3rem;
+@media (max-width:800px){
+    .introContent{
+        padding:5rem 0 0 ;
+        h2{
+            font-size:3.5rem;
+            line-height:4rem;
+        }
+        h2:before{
+            padding-bottom: 3rem;
+        }
+    }
+    .homeImgOne{
+        width:80%
+    }
+
+    .introContent aside{
+        flex:1 1 20rem;
+    }
+    // ..........offer section
+    .offerCotent p{
+        line-height:2.5rem;
+    }
+
+    // ........testimonial
+    .clientSection{
+        padding:4rem;
+        h2{
+            font-size:4.4rem;
+        }
+    }
+    .clientContent{
+        padding:0rem 2rem;
+        p:nth-child(3){
+            padding-top:0;           
+        }
+        .fa-star{
+        font-size:2.5rem;
+    }
+    }
+}
+
+@media (max-width:600px){
+    p{
+        line-height:2.4rem;
+    }
+    .introWords{
+        flex:1 1 40rem;
+    }
+    // .......offerContent
+    .offerSection{
+        ul{
+            height:55vh;
+            padding:3rem 0 3rem 2rem;
+        }
+    }
+    .offerCotent p{
+        display:none;
+    }
+    // ...testimonial
+    .clientContent{
+        height:70vh;
+    }
+    .clientSection{
+        padding:3rem;
+        h2{
+            font-size:4rem;
+        }
+    }
+    .clientContent{
+        padding:0rem 2rem;
+        p:nth-child(3){
+            line-height:2rem;
+            font-size:1.6rem;         
+        }
+        .fa-star{
+            font-size:2rem;
+        }
+    }
+
+    // .......gallery
+    .galleryContent{
+        padding:4rem 0 3rem 0;
+        li{
+            width:calc(100% - 2rem);
+            margin:1rem;
+        }
+        li:nth-child(odd){
+            display:none;
+        }
+
+        h4,h2{
+            padding-bottom: 2rem;
+        }
+    }
+    .fa-chevron-right,
+    .fa-chevron-left{
+        display: none;
+    }
+
+    // .......contact
+    .contactSectionOne h2{
+        font-size: 3.5rem;
+    }
+
+
+}
+
+@media (max-width:550px){
+    .clientSection{
+        h2{
+            font-size:3rem;
+            text-align:center;
+        }
+    }
 }
 

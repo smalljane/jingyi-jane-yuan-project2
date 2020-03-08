@@ -21,7 +21,7 @@
 
 .mainSection h5{
     font-family:$headerFont;
-    font-size:1.4em;
+    font-size:1.6rem;
 }
 
 .blogArticle {
@@ -63,7 +63,6 @@ article{
             color:#00acee;
         }
     }
-
     .socialNav ul{
         display: flex;
     }
@@ -177,11 +176,9 @@ article{
         color:#A4F1DC;
         font-style: italic;
     }
-
     .comment p:first-child{
         color:#000000;
     }
-
     .comment p:last-child{
         font-size: 1rem;
         letter-spacing:0.3px;
@@ -243,6 +240,5 @@ article{
     button:hover{
         color:#000000;
     }
-
 }
 

@@ -3,6 +3,7 @@
     height:100vh;
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:center;
 }
 
 .homePage .headerBackground{
@@ -31,6 +32,9 @@ header{
         justify-content:space-between;
         align-items: flex-end;
         flex:1 0 25%;
+    }
+    .fa{
+        visibility: hidden;
     }
 
     h1,h2{
@@ -73,16 +77,55 @@ header{
         top:13px;
         left:8px;
     }
-    
 }
 
-
 // media query for header
+@media (max-width:1300px){
+    .homePage .headerBackground{
+        background-position:right;
+    }
+}
 
-@media (max-width:1100px){
+@media (max-width:1000px){
+    .headerBackground{
+        height:70vh;
+    }
+    .contactPage .headerBackground{
+        height:50vh;
+    }
         header{
-            h1,h2{
-        font-size: 5rem;
+            .navLeft,
+            .navRight{
+                height:0;
+                overflow:hidden;
+                display:none;
+            }
+            .fa-bars{
+                visibility:visible;
+                font-size:3rem;
+            }
         }
+}
+
+@media (max-width:650px){
+    .headerBackground{
+        height:60vh;
+    }
+    .contactPage .headerBackground{
+        height:30vh;
+    }
+    header{ 
+        h1,h2{
+            font-size:4.8rem;
+        }
+    }
+}
+
+@media (max-width:550px){
+    header{ 
+        h1,h2{
+            font-size:4rem;
+        }
+
     }
 }

@@ -274,6 +274,7 @@ span {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .homePage .headerBackground {
@@ -314,6 +315,10 @@ header .navRight {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
+}
+
+header .fa {
+  visibility: hidden;
 }
 
 header h1, header h2 {
@@ -360,9 +365,46 @@ header .fa-shopping-bag:after {
   left: 8px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
+  .homePage .headerBackground {
+    background-position: right;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerBackground {
+    height: 70vh;
+  }
+  .contactPage .headerBackground {
+    height: 50vh;
+  }
+  header .navLeft,
+  header .navRight {
+    height: 0;
+    overflow: hidden;
+    display: none;
+  }
+  header .fa-bars {
+    visibility: visible;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .headerBackground {
+    height: 60vh;
+  }
+  .contactPage .headerBackground {
+    height: 30vh;
+  }
   header h1, header h2 {
-    font-size: 5rem;
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header h1, header h2 {
+    font-size: 4rem;
   }
 }
 
@@ -388,6 +430,7 @@ header .fa-shopping-bag:after {
 .introContent h2 {
   font-size: 4.8rem;
   letter-spacing: -1.2px;
+  line-height: 6rem;
 }
 
 .introContent aside {
@@ -428,8 +471,8 @@ h4 {
 .introWords,
 .introContent aside {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 400px;
-          flex: 1 1 400px;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
 }
 
 /* adding a frame for the about section's image */
@@ -451,25 +494,23 @@ h4 {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #ffffff;
   height: 120vh;
 }
 
 .offerSection ul {
+  background-color: white;
   float: left;
-  width: 60%;
-  height: 100vh;
+  width: 65%;
+  height: 120vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 12rem;
+  padding: 12rem 0;
 }
 
 .offerSection li {
@@ -499,6 +540,7 @@ h4 {
 .clientSection {
   background-image: url(../sunshine-assets/pattern.png);
   padding: 5rem;
+  clear: both;
 }
 
 .clientSection h2 {
@@ -534,6 +576,7 @@ h4 {
   line-height: 3.6rem;
   color: #000000;
   padding-top: 3rem;
+  text-align: center;
 }
 
 .clientContent .starRating {
@@ -650,13 +693,244 @@ h4 {
   font-size: 2.4rem;
 }
 
-.city,
-.ourEmail span {
+.contactOneContent .city,
+.contactOneContent .ourEmail span {
   font-family: "Playfair Display", serif;
 }
 
-.address {
+.contactOneContent .address {
   padding-bottom: 3rem;
+}
+
+@media (max-width: 1300px) {
+  .introSection {
+    padding: 10rem 0 5rem;
+  }
+  .introContent {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10rem 0;
+  }
+  .introContent h2 {
+    font-size: 4rem;
+  }
+  .introContent h2:before {
+    padding-bottom: 3rem;
+  }
+  .circleLogo {
+    bottom: -10rem;
+    left: -8rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .introSection {
+    padding: 7rem 0 3rem;
+  }
+  .introContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 6rem 0 0 0;
+  }
+  .introContent h2:before {
+    display: none;
+  }
+  .homeImgOne {
+    margin-bottom: 2rem;
+  }
+  .circleLogo {
+    display: none;
+  }
+  .introWords {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 3rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
+  }
+  .offerSection {
+    background-position: top;
+    background-size: cover;
+    height: auto;
+  }
+  .offerSection ul {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100vh;
+    width: 100%;
+    float: none;
+    padding: 7rem 0 7rem 2rem;
+  }
+  .offerSection p {
+    color: #616060;
+  }
+  .clientSection {
+    padding: 4rem;
+  }
+  .clientSection h2 {
+    font-size: 4.8rem;
+  }
+  .clientContent {
+    padding: 3rem 6rem;
+  }
+  .clientContent p:nth-child(3) {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-top: 1rem;
+  }
+  .fa-chevron-right,
+  .fa-chevron-left {
+    font-size: 3rem;
+  }
+  .galleryContent {
+    padding: 8rem 0;
+  }
+  .galleryContent li {
+    width: calc((100% / 2) - 2rem);
+    margin: 1rem;
+  }
+  .contactSectionImg {
+    display: none;
+  }
+  .contactSectionOne {
+    display: block;
+    background-image: url(../sunshine-assets/home-10.jpeg);
+  }
+  .contactSectionOne h2 {
+    font-size: 4.8rem;
+    padding-bottom: 4rem;
+  }
+  .contactSectionOne p:nth-of-type(3) {
+    padding: 2rem 0 0 0;
+  }
+  .contactOneContent {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    padding: 7rem 0 7rem 5rem;
+  }
+  .contactOneContent h4 {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  .contactOneContent .city,
+  .contactOneContent .ourEmail span {
+    font-family: "Playfair Display", serif;
+  }
+  .contactOneContent .address {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introContent {
+    padding: 5rem 0 0;
+  }
+  .introContent h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .introContent h2:before {
+    padding-bottom: 3rem;
+  }
+  .homeImgOne {
+    width: 80%;
+  }
+  .introContent aside {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+  }
+  .offerCotent p {
+    line-height: 2.5rem;
+  }
+  .clientSection {
+    padding: 4rem;
+  }
+  .clientSection h2 {
+    font-size: 4.4rem;
+  }
+  .clientContent {
+    padding: 0rem 2rem;
+  }
+  .clientContent p:nth-child(3) {
+    padding-top: 0;
+  }
+  .clientContent .fa-star {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    line-height: 2.4rem;
+  }
+  .introWords {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  .offerSection ul {
+    height: 55vh;
+    padding: 3rem 0 3rem 2rem;
+  }
+  .offerCotent p {
+    display: none;
+  }
+  .clientContent {
+    height: 70vh;
+  }
+  .clientSection {
+    padding: 3rem;
+  }
+  .clientSection h2 {
+    font-size: 4rem;
+  }
+  .clientContent {
+    padding: 0rem 2rem;
+  }
+  .clientContent p:nth-child(3) {
+    line-height: 2rem;
+    font-size: 1.6rem;
+  }
+  .clientContent .fa-star {
+    font-size: 2rem;
+  }
+  .galleryContent {
+    padding: 4rem 0 3rem 0;
+  }
+  .galleryContent li {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+  .galleryContent li:nth-child(odd) {
+    display: none;
+  }
+  .galleryContent h4, .galleryContent h2 {
+    padding-bottom: 2rem;
+  }
+  .fa-chevron-right,
+  .fa-chevron-left {
+    display: none;
+  }
+  .contactSectionOne h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .clientSection h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
 footer {
@@ -779,7 +1053,7 @@ footer .footerIcon {
 
 .mainSection h5 {
   font-family: "Playfair Display", serif;
-  font-size: 1.4em;
+  font-size: 1.6rem;
 }
 
 .blogArticle ul {
