@@ -41,3 +41,19 @@ span{
     font-weight:600;
     color:#000000;
 }
+
+@media (max-width:1000px){
+    .wrapper{
+        width:90%;
+    }
+}
+
+@media (max-width:800px){
+
+
+    p{
+    font-size:1.2rem;
+    line-height:2.5rem;
+    }
+    
+}

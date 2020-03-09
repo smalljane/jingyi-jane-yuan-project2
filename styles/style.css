@@ -269,6 +269,19 @@ span {
   color: #000000;
 }
 
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+}
+
 /* styling header for three pages*/
 .headerBackground {
   height: 100vh;
@@ -931,6 +944,9 @@ h4 {
     font-size: 3rem;
     text-align: center;
   }
+  .contactOneContent {
+    padding: 3.5rem 0 3.5rem 2rem;
+  }
 }
 
 footer {
@@ -1036,6 +1052,8 @@ footer .footerIcon {
 
 .mainSection {
   background-color: #ffffff;
+  position: relative;
+  top: -7rem;
   padding: 0 5rem;
 }
 
@@ -1044,7 +1062,7 @@ footer .footerIcon {
   line-height: 6rem;
   letter-spacing: -1.2px;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 5rem 5rem;
 }
 
 .blogNav {
@@ -1069,11 +1087,6 @@ footer .footerIcon {
   padding-bottom: 3rem;
   margin-top: 5rem;
   border-bottom: 2px solid #EDEDED;
-}
-
-.blogArticle li:first-child {
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
 }
 
 .blogArticle li:nth-of-type(2) {
@@ -1141,7 +1154,7 @@ article p:first-child {
 }
 
 .threeArticles li {
-  width: calc((100% / 3));
+  width: calc(100% / 3);
   margin-left: 2rem;
   line-height: 3rem;
   font-size: 1.4rem;
@@ -1213,6 +1226,7 @@ article p:first-child {
 
 .commentsSection .commentBox {
   position: relative;
+  width: 80%;
   height: auto;
   padding: 2rem;
   background-color: #EDEDED;
@@ -1233,7 +1247,7 @@ article p:first-child {
 }
 
 .commentsSection .comment span {
-  color: #A4F1DC;
+  color: #7be2c7;
   font-style: italic;
 }
 
@@ -1309,6 +1323,172 @@ article p:first-child {
 
 .feedBack button:hover {
   color: #000000;
+}
+
+@media (max-width: 1150px) {
+  .blogPage h1 {
+    font-size: 4rem;
+  }
+  .blogArticle ul {
+    margin-top: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+  article p {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 970px) {
+  .mainSection {
+    padding: 0 3rem;
+  }
+  .blogPage h1,
+  .threeArticles h2,
+  .commentsSection h2,
+  .feedBack h2 {
+    font-size: 3.7rem;
+    line-height: 4.5rem;
+  }
+  .blogPage h1 {
+    padding: 3.8rem 3.5rem 3rem 3.5rem;
+  }
+  .blogArticle ul li:nth-of-type(5) {
+    display: none;
+  }
+  article p {
+    padding-bottom: 2rem;
+  }
+  article .socialNav {
+    padding: 0;
+  }
+  .feedBack h2 {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .mainSection {
+    top: -4rem;
+    padding: 0 3.5rem;
+  }
+  .blogPage h1,
+  .threeArticles h2,
+  .commentsSection h2,
+  .feedBack h2 {
+    font-size: 3.3rem;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+  }
+  .blogPage h1 {
+    padding: 3rem 3rem 2rem 3rem;
+  }
+  .threeArticles li {
+    width: 50%;
+  }
+  .threeArticles li:nth-of-type(3) {
+    display: none;
+  }
+  .commentsSection .commentBox {
+    padding: 1rem;
+  }
+  .commentsSection .comment p {
+    line-height: 2rem;
+  }
+  .feedBack h2 {
+    margin-bottom: 2rem;
+  }
+  .feedBack ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .feedBack li {
+    width: 70%;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+  }
+  .feedBack button {
+    height: 4rem;
+    width: 16rem;
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainSection {
+    padding: 0 1.5rem;
+  }
+  .blogPage h1,
+  .threeArticles h2,
+  .commentsSection h2,
+  .feedBack h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .blogPage h1 {
+    padding: 2.5rem 0 2rem 0;
+  }
+  .blogNav {
+    display: none;
+  }
+  .blogArticle ul {
+    margin-top: 2rem;
+  }
+  .blogArticle ul li:nth-of-type(4) {
+    display: none;
+  }
+  article {
+    padding: 2rem 0 4rem 0;
+  }
+  article p {
+    line-height: 2rem;
+    padding-bottom: 1.3rem;
+  }
+  .commentsSection h2 {
+    margin-bottom: 1.5rem;
+  }
+  .commentsSection .tip {
+    display: none;
+  }
+  .commentsSection li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .commentsSection .commentBox {
+    margin-top: 1rem;
+  }
+  .feedBack input {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .threeArticles ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .threeArticles li {
+    width: 85%;
+    margin: 0 0 1rem 0;
+  }
 }
 
 .contactPage h1, h2 {
