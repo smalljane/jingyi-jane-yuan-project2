@@ -984,7 +984,7 @@ footer input[type=email] {
           appearance: none;
   background-color: #000000;
   border: none;
-  width: 95%;
+  width: 100%;
   color: white;
   padding: 1rem 0;
   font-size: 1.4rem;
@@ -993,6 +993,9 @@ footer input[type=email] {
 
 footer i {
   font-size: 1.4rem;
+  position: absolute;
+  bottom: 8rem;
+  right: 0;
 }
 
 footer .footerTop {
@@ -1013,15 +1016,11 @@ footer .footerMid {
 
 footer .footerRight {
   width: 50%;
+  position: relative;
 }
 
-footer .footerLeft,
-footer .footerMid {
-  width: 20%;
-}
-
-footer .footerRight {
-  width: 50%;
+footer .footerRight i:hover {
+  color: #ffffff;
 }
 
 footer .footerBottom {
@@ -1044,6 +1043,26 @@ footer .footerIcon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  footer .footerLeft {
+    width: 60%;
+  }
+  footer .footerMid {
+    width: 40%;
+  }
+  footer .footerTop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footerRight {
+    margin-top: 2rem;
+    width: 90%;
+  }
+  footer .footerRight i {
+    bottom: 1rem;
+  }
 }
 
 .blogPage main {
