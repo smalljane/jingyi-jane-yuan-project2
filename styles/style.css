@@ -1516,9 +1516,15 @@ article p:first-child {
 }
 
 .contactDetails li {
-  width: calc(100% / 3);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
   padding: 6rem 0 4rem 5rem;
   border-right: 2px solid #EDEDED;
+}
+
+.contactDetails li:last-child {
+  border: none;
 }
 
 .contactDetails h5 {
@@ -1596,5 +1602,97 @@ article p:first-child {
   background-image: url(../sunshine-assets/contact-2.jpeg);
   height: 90vh;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .contactDetails .contactInfo p {
+    width: 80%;
+  }
+  .contactDetails li {
+    padding: 4rem 0 3rem 3rem;
+  }
+  .lastBackground {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .contactDetails {
+    padding: 5rem 0 2rem;
+  }
+  .contactDetails ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactDetails li {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 50%;
+    padding: 3rem 0 2rem 3rem;
+  }
+  .contactDetails li:nth-of-type(2) {
+    border: none;
+  }
+  .contactPage h1, h2 {
+    font-size: 4rem;
+  }
+  .contactDetails h1,
+  .contactDetails .contactInfo p {
+    padding-bottom: 2.5rem;
+  }
+  .feedBackTwo h2 {
+    padding-bottom: 2rem;
+  }
+  .feedBackTwo p {
+    padding: 0;
+  }
+  .feedBackTwo ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 0 3rem;
+  }
+  .feedBackTwo li {
+    width: 70%;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+  }
+  .feedBackTwo button {
+    margin: 3rem 0;
+  }
+  .lastBackground {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    line-height: 2rem;
+  }
+  .contactPage h1, h2 {
+    font-size: 3.3rem;
+  }
+  .contactDetails {
+    padding-top: 3.5rem;
+  }
+  .contactDetails h5 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .contactDetails .fas {
+    font-size: 3rem;
+  }
+  .feedBackTwo input {
+    font-size: 1.2rem;
+  }
+  .feedBackTwo button {
+    margin: 1.5rem 0;
+  }
+  .lastBackground {
+    height: 30vh;
+  }
 }
